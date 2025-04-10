@@ -1,0 +1,76 @@
+.intelli-hire__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: #000;
+    /* Black background */
+    color: #fff;
+    /* White text for contrast */
+}
+
+.intelli-hire__cta-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+/* Keep font styles the same for consistency */
+
+.intelli-hire__cta-content p,
+.intelli-hire__cta-content h3 {
+    font-family: var(--font-family);
+}
+
+.intelli-hire__cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.intelli-hire__cta-btn button {
+    background: #fff;
+    /* Light background for the button */
+    color: #000;
+    /* Dark text for the button */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    min-width: 150px;
+}
+
+
+/* Update media queries for responsive design */
+
+@media screen and (max-width: 650px) {
+    .intelli-hire__cta {
+        flex-direction: column;
+    }
+    .intelli-hire__cta-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intelli-hire__cta {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+    .intelli-hire__cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .intelli-hire__cta-btn button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
